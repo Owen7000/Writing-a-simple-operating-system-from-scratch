@@ -21,7 +21,11 @@ mov al, 'S'
 int 0x10
 
 
+
 jmp$
+
+message:
+    db 'Hello',
 
 times 510-($-$$) db 0
 dw 0xaa55
